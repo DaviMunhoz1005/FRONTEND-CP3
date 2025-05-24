@@ -25,4 +25,4 @@ Davi Marques de Andrade Munhoz
 
 ## 🌐 GitHub Pages
 
-[Github Pages](https://seu-usuario.github.io/frontend-cp3)
+[Github Pages](https://davimunhoz1005.github.io/FRONTEND-CP3/)
