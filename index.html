@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | Vinheria Agnello</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/flex-style.css">
+</head>
+<body>
+    <header>
+        <section class="header-left">
+            <p>Vinheria Agnello</p>
+        </section>
+        <nav class="header-menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="src/pages/our-story.html">Nossa História</a></li>
+                <li><a href="src/pages/contact.html">Contato</a></li>
+                <li><a href="src/pages/products.html">Produtos</a></li>
+                <li><a href="src/pages/team.html">Equipe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <h1>Catálogo dos Produtos</h1>
+            <form id="productsFilter" aria-label="Filtros de produtos">
+                <section class="filters">
+                    <label for="category">Categoria:</label>
+                    <select id="category">
+                        <option value="Melhores Vinhos">Melhores Vinhos</option>
+                        <option value="">Todos os Vinhos</option>
+                        <option value="Vinhos mais Antigos">Vinhos mais Antigos</option>
+                        <option value="Vinhos mais Comuns">Vinhos mais Comuns</option>
+                    </select>
+                </section>
+                <section class="filters">
+                    <label>Ordenar por Preço:</label>
+                    <button class="order-btn" id="ascendingOrder" data-order="ascending" type="button">Crescente</button>
+                    <button class="order-btn" id="descendingOrder" data-order="descending" type="button">Decrescente</button>
+                </section>
+                <section class="filters">
+                    <label>Disponibilidade:</label>
+                    <input type="checkbox" name="availableFilter" value="available" id="disponivel" checked>
+                    <label for="disponivel">Disponível</label>
+                    <input type="checkbox" name="availableFilter" value="unavailable" id="indisponivel" checked>
+                    <label for="indisponivel">Indisponível</label>
+                </section>
+            </form>
+            <section id="mainButtons" aria-label="Ações principais">
+                <button type="button" id="buttonFilter">Filtrar</button>
+                <button type="button" id="listAllProducts">Listar Todos os Produtos</button>
+                <button type="button" id="clearFilters">Limpar Filtro</button>
+            </section>
+            <section id="productContainerDisplay" aria-label="Lista de produtos">  
+                <section class="productSection" id="Melhores Vinhos">
+                    <h2>Melhores Vinhos</h2>  
+                    <article class="product">
+                        <div class="product-inner">
+                            <h3>Vinho Tinto Reserva Ouro</h3>
+                            <p>R$ 249,90</p>
+                            <h5>Tempo de Maturação: 18 meses em carvalho francês</h5>
+                            <h4>Disponibilidade: Disponível</h4>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product-inner">
+                            <h3>Vinho do Porto Vintage 2000</h3>
+                            <p>R$ 399,90</p>
+                            <h5>Tempo de Maturação: 20 anos em barrica</h5>
+                            <h4>Disponibilidade: Indisponível</h4>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product-inner">
+                            <h3>Chardonnay Premium Serra Gaúcha</h3>
+                            <p>R$ 189,00</p>
+                            <h5>Tempo de Maturação: 12 meses em barris de carvalho</h5>
+                            <h4>Disponibilidade: Disponível</h4>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product-inner">
+                            <h3>Cabernet Sauvignon Edição Limitada</h3>
+                            <p>R$ 299,50</p>
+                            <h5>Tempo de Maturação: 24 meses em barricas novas</h5>
+                            <h4>Disponibilidade: Indisponível</h4>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product-inner">
+                            <h3>Malbec Argentino Premium</h3>
+                            <p>R$ 219,90</p>
+                            <h5>Tempo de Maturação: 16 meses em carvalho francês</h5>
+                            <h4>Disponibilidade: Disponível</h4>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product-inner">
+                            <h3>Syrah Gran Reserva Chileno</h3>
+                            <p>R$ 269,90</p>
+                            <h5>Tempo de Maturação: 18 meses em carvalho americano</h5>
+                            <h4>Disponibilidade: Indisponível</h4>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product-inner">
+                            <h3>Espumante Brut Rosé de Altitude</h3>
+                            <p>R$ 179,90</p>
+                            <h5>Tempo de Maturação: 9 meses em autólise</h5>
+                            <h4>Disponibilidade: Disponível</h4>
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
